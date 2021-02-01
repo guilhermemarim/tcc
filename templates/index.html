@@ -1,0 +1,36 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <div class="jumbotron text-center" id="header">
+        <div class="row">
+            <div class="col-md-12">
+                <img class="logo_header" src="{{ url_for('static', filename='img_html/logo_1.png') }}">
+                <span class="texto_header">Sistema de Visão Computacional</span>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding:12% 0 14% 0;">
+        <form action="{{ url_for('relatorio_imagem') }}" method="post" enctype="multipart/form-data">
+            <fieldset>
+              <div class="form-group">
+                <div class="row">
+                    <div class="col-md-10">
+                        <label for="file">Selecionar imagem</label>
+                        <input type="file" id="file" name="file" class="form-control-file border">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-primary btn-salvar expand">Enviar</button>
+                    </div>
+                </div>
+              </div>
+            </fieldset>
+        </form>
+    </div>
+    <footer class="text-center">
+        <p class="p-footer">
+            CENTRO UNIVERSITÁRIO DAS FACULDADES ASSOCIADAS DE ENSINO - FAE Copyright © 2019 Todos os direitos Reservados <br>
+            Largo Engenheiro Paulo de Almeida Sandeville, 15 <br>
+            CEP: 13.870-377 São João da Boa Vista - SP <br>
+        </p>
+        <a class="button-about"><span class="text-white">Informações sobre o sistema</span></a>
+    </footer>
+{% endblock %}
