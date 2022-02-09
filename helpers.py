@@ -91,8 +91,8 @@ def suaviza_imagem_metodo_bilateral(file):
 
 def transforma_para_binario(file):
     cinza = transforma_para_escala_cinza(file)
-    # ret, bin = cv.threshold(cinza, 60, 255, OBJETO_DE_INTERESSE_NA_COR_BRANCA)
-    ret, bin = cv.threshold(cinza, 95, 255, OBJETO_DE_INTERESSE_NA_COR_BRANCA)
+    ret, bin = cv.threshold(cinza, 55, 255, OBJETO_DE_INTERESSE_NA_COR_BRANCA)
+    # ret, bin = cv.threshold(cinza, 95, 255, OBJETO_DE_INTERESSE_NA_COR_BRANCA)
     # ret ---> valor inicial do limiar
     return bin
 

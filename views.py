@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.secret_key = 'visao_computacional'
 
 
-PATH_UNTIL_PROJECT = 'E:/Documentos/alura_cursos/PYTHON/'
-UPLOAD_FOLDER = PATH_UNTIL_PROJECT + 'visao_computacional/static/images/originals/'
+PATH_UNTIL_PROJECT = 'D:/Guilherme/Documentos/Projetos Python/TCC/'
+UPLOAD_FOLDER = PATH_UNTIL_PROJECT + 'static/images/originals/'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif', 'tif', 'tiff'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
